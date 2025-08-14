@@ -1,0 +1,49 @@
+$ pnpm run lint
+
+> home-service-aggregator-frontend@0.1.0 lint /workspace/home-service-aggregator/frontend
+> eslint ./src --quiet
+
+$ find src/services -type f -name "*.js"
+
+src/services/AuthService.js
+src/services/NotificationService.js
+src/services/ReviewService.js
+src/services/ServiceProviderService.js
+src/services/ServiceRequestService.js
+src/services/ServiceService.js
+$ find /workspace/home-service-aggregator/frontend/src/services -type f -name "*.js" -exec grep -l "getProviderServices" {} \;
+
+$ find /workspace/home-service-aggregator/frontend/src/components -type f -name "*.jsx" -exec grep -l "getProviderServices" {} \;
+
+/workspace/home-service-aggregator/frontend/src/components/provider-dashboard/ManageServices.jsx
+/workspace/home-service-aggregator/frontend/src/components/provider-dashboard/ProviderDashboard.jsx
+$ find src/services -type f -name "*.js" -exec grep -l "getProviderRequests" {} \;
+
+$ pnpm run lint
+
+
+> home-service-aggregator-frontend@0.1.0 lint /workspace/home-service-aggregator/frontend
+> eslint ./src --quiet
+
+$ find /workspace/home-service-aggregator/frontend/src/components -type f -name "ProviderServiceRequests.jsx"
+
+/workspace/home-service-aggregator/frontend/src/components/provider-dashboard/ProviderServiceRequests.jsx
+$ pwd && ls -la
+
+/workspace/home-service-aggregator/frontend
+total 49665
+drwxr-xr-x 3444 root root 25006080 Aug  4 05:39 .
+drwxr-xr-x 3518 root root 25358336 Jul 28 02:50 ..
+-rw-r--r--    1 root root      253 Aug  4 05:06 .gitignore
+-rw-r--r--    1 root root     1185 Aug  4 05:06 README.md
+-rw-r--r--    1 root root     1476 Aug  4 05:06 eslint.config.js
+-rw-r--r--    1 root root      518 Aug  4 05:07 index.html
+drwxr-xr-x   13 root root     4096 Aug  5 07:30 node_modules
+-rw-r--r--    1 root root     1284 Aug  4 05:07 package.json
+-rw-r--r--    1 root root   151930 Aug  4 05:39 pnpm-lock.yaml
+-rw-r--r--    1 root root       80 Aug  4 05:07 postcss.config.js
+drwxr-xr-x    7 root root    24576 Aug  4 05:06 public
+drwxr-xr-x   38 root root   303104 Aug  4 05:10 src
+-rw-r--r--    1 root root      331 Aug  4 05:07 tailwind.config.js
+-rw-r--r--    1 root root      790 Aug  4 05:07 template_config.json
+-rw-r--r--    1 root root      281 Aug  4 05:07 vite.config.js

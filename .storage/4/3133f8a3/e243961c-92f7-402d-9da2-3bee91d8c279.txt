@@ -1,0 +1,3 @@
+$ cd /workspace/react_template
+$ cd /workspace && mkdir -p home-service-aggregator/{backend/src/main/{java/com/homeservice/aggregator/{controller,model,repository,service,config,security,dto,exception,websocket},resources},frontend}
+

@@ -1,0 +1,19 @@
+$ pnpm run lint
+
+> home-service-aggregator-frontend@0.1.0 lint /workspace/home-service-aggregator/frontend
+> eslint ./src --quiet
+
+$ find src/services -type f -name "*.js"
+
+src/services/AuthService.js
+src/services/NotificationService.js
+src/services/ReviewService.js
+src/services/ServiceProviderService.js
+src/services/ServiceRequestService.js
+src/services/ServiceService.js
+$ find /workspace/home-service-aggregator/frontend/src/services -type f -name "*.js" -exec grep -l "getProviderServices" {} \;
+
+$ find /workspace/home-service-aggregator/frontend/src/components -type f -name "*.jsx" -exec grep -l "getProviderServices" {} \;
+
+/workspace/home-service-aggregator/frontend/src/components/provider-dashboard/ManageServices.jsx
+/workspace/home-service-aggregator/frontend/src/components/provider-dashboard/ProviderDashboard.jsx

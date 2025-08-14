@@ -1,0 +1,5 @@
+$ pnpm run lint
+
+> home-service-aggregator-frontend@0.1.0 lint /workspace/home-service-aggregator/frontend
+> eslint ./src --quiet
+

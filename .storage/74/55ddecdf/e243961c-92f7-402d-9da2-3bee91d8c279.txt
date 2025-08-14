@@ -1,0 +1,3 @@
+$ mkdir -p home-service-aggregator/frontend
+cp -r react_template/* home-service-aggregator/frontend/
+cd home-service-aggregator/frontend

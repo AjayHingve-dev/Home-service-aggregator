@@ -1,0 +1,8 @@
+$ ls -la home-service-aggregator/frontend/
+total 285144
+drwxr-xr-x 16646 root root 143339520 Aug  4 05:00 .
+drwxr-xr-x   417 root root   5320704 Jul 28 02:50 ..
+-rw-r--r--     1 root root      1185 Aug  4 05:00 README.md
+-rw-r--r--     1 root root      1476 Aug  4 05:00 eslint.config.js
+-rw-r--r--     1 root root       387 Aug  4 05:00 index.html
+drwxr-xr-x 16642 root root 143323136 Aug  4 05:00 node_modules
